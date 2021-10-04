@@ -1,13 +1,10 @@
 # Docker: Nginx and NODE
 
-Services container infrastructure integrated by NGINX and NODE, designed to implement applications made with Vue.js or Node under a microservices structure. In consequence, the backend enviroment must be deploy from other service container.
+Docker container setup for Vue.js / Node apps, using Nginx as web server.
 
 ## Description
 
-This project is a simple container services infrastructure designed to deploy applications made with Vue,js or Node. It is integrated by:
-
-- NGINX
-- NODE
+This project is a simple docker container setup designed to development or deploy applications made with Vue.js / Node.
 
 As a developer looking to improve my skils and abilities in the domain of the Vue.js framework, I share this container structure in interest of making it easier to deploy both development and production environments.
 
@@ -24,9 +21,10 @@ Docker Compose relies on Docker Engine, so make sure you have Docker Engine inst
 3.  Clone your new repository
 4.  If you want, you can customize the names of your services, replacing the patterns "\_service" by "\_app_name", replacing the matches found in ./docker-compose.yml.
 5.  From your local copy and under app directory:
-    1. Run `npm install -g @vue/cli`
-    2. Run `vue create . `
+    1. If you haven't installed Vue Cli before, run `npm install -g @vue/cli`
+    2. If you want to create a new app, run `vue create . `, else copy all your code inside "app" directory.
     3. Run `docker-compose up -d --build`
+    4. Check from your browser, open the URL http://0.0.0.0/
 
 <!--
  ### Executing program
