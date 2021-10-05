@@ -1,4 +1,4 @@
-# Docker: Nginx and NODE
+# Docker: Nginx and Node
 
 Docker container setup for Vue.js / Node apps, using Nginx as web server.
 
